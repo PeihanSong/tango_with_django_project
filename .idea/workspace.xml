@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d409467-fbc6-41bf-96ec-9667062d3d0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/cfecfe59-2858-448a-a7e3-906042795a69.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/rango.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tango_with_django_2_code" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rango/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rango/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rango/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tango_with_django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tango_with_django_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tango_with_django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tango_with_django_project/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -53,8 +66,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests_chapter3.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project" />
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project\templates\rango" />
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project\media" />
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project\templates" />
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project\templates\rango" />
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project\static\images" />
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project" />
+      <recent name="C:\Users\SPH\Desktop\Workspace\tango_with_django_project\rango" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.tests_chapter3">
     <configuration name="tests_chapter3" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -118,7 +147,7 @@
       <workItem from="1641918094170" duration="613000" />
       <workItem from="1641994632691" duration="36000" />
       <workItem from="1642595303457" duration="2431000" />
-      <workItem from="1643296126561" duration="15607000" />
+      <workItem from="1643296126561" duration="32300000" />
     </task>
     <servers />
   </component>
