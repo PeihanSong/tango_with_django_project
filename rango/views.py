@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
@@ -15,15 +17,18 @@ from rango.models import Category, Page
 
 def index(request):
     category_list = Category.objects.order_by('-likes')[:5]
-
-    context_dictionary = {'boldmessage': 'Crunchy, creamy, cookie, candy, cupcake!', 'categories': category_list}
+    context_dictionary = {'boldmessage': 'Crunchy, creamy, cookie, candy, cupcake!'}
     most_viewed_pages = Page.objects.order_by('-views')[:5]
+    context_dictionary['categories'] = category_list
     context_dictionary['pages'] = most_viewed_pages
-    return render(request, 'rango/index.html', context=context_dictionary)
+    visitor_cookie_handler(request)
+    response = render(request, 'rango/index.html', context=context_dictionary)
+    return response
 
 
 def about(request):
-    context_dictionary = {'yourname': 'Peihan Song'}
+    visitor_cookie_handler(request)
+    context_dictionary = {'yourname': 'Peihan Song', 'visits': request.session['visits']}
     return render(request, 'rango/about.html', context=context_dictionary)
 
 
@@ -161,3 +166,25 @@ def restricted(request):
 def user_logout(request):
     logout(request)
     return redirect(reverse('rango:index'))
+
+
+def get_server_side_cookie(request, cookie, default_value=None):
+    val = request.session.get(cookie)
+    if not val:
+        val = default_value
+    return val
+
+
+def visitor_cookie_handler(request):
+    visits = int(get_server_side_cookie(request, 'visits', '1'))
+    last_visit_cookie = get_server_side_cookie(request, 'last_visit', str(datetime.now()))
+    last_visit_time = datetime.strptime(last_visit_cookie[:-7], '%Y-%m-%d %H:%M:%S')
+
+    if (datetime.now() - last_visit_time).days > 0:
+        visits = visits + 1
+        request.session['last_visit'] = str(datetime.now())
+
+    else:
+        request.session['last_visit'] = last_visit_cookie
+
+    request.session['visits'] = visits
